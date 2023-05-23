@@ -1,1 +1,1 @@
-# Planet gravity prtotype
+# Planet gravity prototype
