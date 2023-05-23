@@ -1,1 +1,1 @@
-# 2D_Prototyping
+# Planet gravity prtotype
