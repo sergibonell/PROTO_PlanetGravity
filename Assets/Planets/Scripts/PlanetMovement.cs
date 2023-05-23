@@ -32,7 +32,7 @@ public class PlanetMovement : MonoBehaviour
         input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         velocity = rb.velocity;
 
-        if(currentPlanet != null)
+        if (currentPlanet != null)
             planetMovement();
 
         rb.velocity = velocity;
@@ -43,7 +43,7 @@ public class PlanetMovement : MonoBehaviour
         normal = (transform.position - currentPlanet.transform.position).normalized;
 
         horizontalVelo = input.x * moveSpeed;
-        verticalVelo = isGrounded ? -0.1f : verticalVelo + currentPlanet.gravity * Time.deltaTime;
+        verticalVelo = isGrounded ? -0.5f : verticalVelo + currentPlanet.gravity * Time.deltaTime;
 
         if (normal != (Vector2)transform.up)
             rotation();
